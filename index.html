@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namora comigo?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="texto">
+            </div>
+    <div class="image">
+       
+    </div>
+    <div id="conteudo">
+        <h1>Tenho algo pra te pedir</h1>
+        <p>Oiii. Meus dias sempre melhoram quando estou com você, você sempre me da um motivo pra sorrir, faz meu dia mais alegre e feliz. Obrigado por tudo você é uma garota incrivel e eu te amo. Vivemos muitas coisas desde que nos conhecemos e sou grato por cada momento e detalhe e por ter você na minha vida. Aqui tem alguns momentos felizes que passamos juntos.</p>
+        <img src="primeira.jpg" alt="Nos">
+        <img src="segunda.jpg" alt="Nos">
+        <img src="terceira.jpg" alt="Nos">
+        <h3>Em fim ne kkk, vamos a pergunta que importa.</h3>
+        <h2>Me da um beijo?</h2>
+        <button class="btn" onclick="sim()">SIM</button>
+        <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>
+    </div>
+</body>
+<script>
+    function sim() {
+        alert("Hoje você vai dar um beijo que nunca vai esquecer.");
+        // redireciona para um URL após clicar no SIM
+        location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
+    }
+
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
+
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
+
+    /* Apague se quiser, isso apenas escreve MTHS1901 e o link para o tutorial no console */
+    const o = "MTHS1901", e = 90, l = "bold"; console.log(`%c${o}`, "font-size: 90px; font-weight: bold; background: linear-gradient(90deg, red, yellow);"), console.log("Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4");
+
+</script>
+
+</body>
+</html>
